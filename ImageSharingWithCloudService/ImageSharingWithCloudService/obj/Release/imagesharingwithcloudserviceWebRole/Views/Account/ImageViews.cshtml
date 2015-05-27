@@ -1,0 +1,50 @@
+﻿@model IEnumerable<imagesharingwithcloudserviceWebRole.Models.LogEntry>
+
+@{
+    ViewBag.Title = "Image Viewing Activity";
+}
+
+<h2>@ViewBag.Title</h2>
+@section scripts{
+ <link href="@Url.Content("~/Content/Styles/jquery-ui-1.10.3.custom.min.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/jquery-ui-1.10.3.custom.min.js")" type="text/javascript"></script>
+ }
+
+
+
+@using (Html.BeginForm("ImageViews", "Account", FormMethod.Get)) {    
+   <input type id="text" name="date" class = "pickDate" />
+   <input type="submit" value="Search" />
+}
+
+<script type="text/javascript">
+    $(document).ready(function (){$('.pickDate').datepicker({
+            changeMonth: true,
+            minDate: -62,
+            maxDate:0
+        });
+    });
+</script>
+<table class="mytablecss">
+    <tr>
+        <th>Caption</th>
+        <th>User</th>
+        <th>Time</th>
+
+    </tr>
+   
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(entry.Caption, "Details", "Images", new{Id = entry.ImageId})</td>
+            <td>@entry.Userid</td>
+            <td>@string.Format("{0:t}", entry.EntryDate)
+          @*  <br />
+            @entry.PartitionKey
+            <br />
+           @entry.RowKey*@
+           </td>
+        </tr>
+    }
+
+</table>

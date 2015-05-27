@@ -1,0 +1,37 @@
+﻿@model List<imagesharingwithcloudserviceWebRole.Models.SelectItemView>
+
+@{
+    ViewBag.Title = "Deactivate Users";
+}
+
+<h2>@ViewBag.Title</h2>
+@{ Html.BeginForm("Deactivate", "Account", FormMethod.Post);}
+<fieldset>
+    <legend>Deactivate/Reactivate Users</legend>
+    @Html.AntiForgeryToken()
+    <table class ="gridTable">
+        <tr>
+            <th>Deactivate</th>
+            <th>User</th>
+
+        </tr>
+        @for(var i=0; i<Model.Count(); i++)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(us => us[i].Id)
+                    @Html.CheckBoxFor(us => us[i].Checked)
+                </td>
+                <td>
+                    @Html.DisplayFor(us => us[i].Name)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</fieldset>
+@ViewBag.Message
+@{Html.EndForm();}

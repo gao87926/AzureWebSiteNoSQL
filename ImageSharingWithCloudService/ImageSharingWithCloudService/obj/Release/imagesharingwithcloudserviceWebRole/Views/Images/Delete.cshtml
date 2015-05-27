@@ -1,0 +1,28 @@
+﻿@model imagesharingwithcloudserviceWebRole.Models.ImageView
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>@ViewBag.Title</h2>
+@{Html.BeginForm("Delete", "Images", FormMethod.Post);}
+<fieldset>
+    <legend>Delete Image </legend>
+    @Html.AntiForgeryToken()
+    <p>
+        <img src="@Url.Content("~/Images/img-" + @Model.Id + ".jpg")"/>
+    </p>
+    <p>@Model.Id</p>
+    <p>@Model.TagName</p>
+    <p>Caption: @Model.Caption </p>
+    <p>
+        Description:
+    <br />@Model.Description
+    </p>
+    <p>Date Taken: @Model.DateTaken.ToShortDateString()</p>
+    <p>Uploader:@Model.Userid</p>
+
+    <p>
+        <input type="submit" value="Confirm Delete" /></p>
+</fieldset>
+
+@{Html.EndForm();}

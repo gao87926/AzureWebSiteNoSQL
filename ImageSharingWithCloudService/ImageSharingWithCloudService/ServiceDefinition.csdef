@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="ImageSharingWithCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WebRole name="imagesharingwithcloudserviceWebRole" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="HttpIn" />
+          <Binding name="Endpoint2" endpointName="HttpsIn" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="http" port="85" />
+      <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="CS526DEMON" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="CS526DEMON" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
+  </WebRole>
+  <!--*********************************-->
+  <WorkerRole name="imagesharingwithcloudserviceWorkerRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="ExternalHTTP" protocol="http" port="10000" />
+      <InternalEndpoint name="InternalTCP" protocol="tcp" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

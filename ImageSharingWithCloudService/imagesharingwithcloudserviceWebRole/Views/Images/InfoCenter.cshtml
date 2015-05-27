@@ -1,0 +1,41 @@
+﻿@model List<imagesharingwithcloudserviceWebRole.Models.UserInfoCenter>
+
+@{
+    ViewBag.Title = "Info Center";
+}
+
+@{ Html.BeginForm("InfoCenter", "Images", FormMethod.Post);}
+<fieldset>
+     @Html.AntiForgeryToken()
+    <legend>Message Queue</legend>
+    <table class="mytablecss">
+        <tr>
+            <th>Delete</th>
+            <th>Image Caption</th>
+            <th>Status</th>
+
+        </tr>
+        @for(var i=0; i<Model.Count(); i++)
+        {
+            <tr>
+                <td>
+                     @Html.HiddenFor(imgs => imgs[i].Id)
+                     @Html.HiddenFor(imgs => imgs[i].PopReceipt)
+                    @Html.CheckBoxFor(imgs => imgs[i].Checked)
+                </td>
+                <td>
+                    @Html.DisplayFor(imgs => imgs[i].Name)
+                </td>
+                 <td>
+                    @Html.DisplayFor(imgs => imgs[i].Status)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</fieldset>
+@ViewBag.Message
+@{Html.EndForm();}

@@ -1,0 +1,26 @@
+﻿@model imagesharingwithcloudserviceWebRole.Models.ImageView
+
+@{
+    ViewBag.Title = "Image Details";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    <img src="@Model.Uri"/>
+</p>
+
+@*<p>@Model.Id</p>*@
+
+
+<p>@Model.TagName</p>
+
+<p>Caption: @Model.Caption </p>
+<p>
+    Description:
+    <br />@Model.Description
+</p>
+<p>
+ 
+</p>
+<p>Date Taken: @Model.DateTaken.ToShortDateString()</p>
+<p>Uploader:@Model.Userid</p>

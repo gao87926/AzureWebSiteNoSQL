@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|EnvDTE.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>EnvDTE.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\WINDOWS\assembly\GAC\EnvDTE\8.0.0.0__b03f5f7f11d50a3a\EnvDTE.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\WINDOWS\assembly\GAC\EnvDTE\8.0.0.0__b03f5f7f11d50a3a\EnvDTE.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|Microsoft.Web.Infrastructure.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>Microsoft.Web.Infrastructure.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\Microsoft.Web.Infrastructure.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\Microsoft.Web.Infrastructure.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|stdole.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>stdole.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.Helpers.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.Helpers.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.Helpers.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.Helpers.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.Mvc.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.Mvc.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 3\Assemblies\System.Web.Mvc.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 3\Assemblies\System.Web.Mvc.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.Razor.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.Razor.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.Razor.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.Razor.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.WebPages.Deployment.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.WebPages.Deployment.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.Deployment.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.Deployment.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.WebPages.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.WebPages.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|System.Web.WebPages.Razor.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>System.Web.WebPages.Razor.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.Razor.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.Razor.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|VSLangProj.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>VSLangProj.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\WINDOWS\assembly\GAC\VSLangProj\7.0.3300.0__b03f5f7f11d50a3a\VSLangProj.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\WINDOWS\assembly\GAC\VSLangProj\7.0.3300.0__b03f5f7f11d50a3a\VSLangProj.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|VSLangProj2.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>VSLangProj2.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\WINDOWS\assembly\GAC\VSLangProj2\7.0.5000.0__b03f5f7f11d50a3a\VSLangProj2.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\WINDOWS\assembly\GAC\VSLangProj2\7.0.5000.0__b03f5f7f11d50a3a\VSLangProj2.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+    <ValidationIssue Include="imagesharingwithcloudserviceWorkerRole|VsWebSite.Interop.dll|WAT150">
+      <ProjectName>imagesharingwithcloudserviceWorkerRole</ProjectName>
+      <FilenameWithExtension>VsWebSite.Interop.dll</FilenameWithExtension>
+      <Code>WAT150</Code>
+      <FileFullPath>C:\WINDOWS\assembly\GAC\VsWebSite.Interop\8.0.0.0__b03f5f7f11d50a3a\VsWebSite.Interop.dll</FileFullPath>
+      <WATMessage>True</WATMessage>
+      <Arguments>imagesharingwithcloudserviceWorkerRole;C:\WINDOWS\assembly\GAC\VsWebSite.Interop\8.0.0.0__b03f5f7f11d50a3a\VsWebSite.Interop.dll</Arguments>
+      <HelpKeyword>WATValidationIssueWarning</HelpKeyword>
+    </ValidationIssue>
+  </ItemGroup>
+</Project>

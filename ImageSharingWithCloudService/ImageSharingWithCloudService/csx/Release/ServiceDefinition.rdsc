@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<serviceContract xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" dslVersion="1.0.0.0" name="ImageSharingWithCloudServiceContract" xmlns="http://schemas.microsoft.com/dsltools/Contracts">
+  <elements>
+    <interface name="imagesharingwithcloudserviceWebRole:HttpIn" url="http://*:85" />
+    <interface name="imagesharingwithcloudserviceWebRole:HttpsIn" url="https://*:443" />
+    <interface name="imagesharingwithcloudserviceWorkerRole:ExternalHTTP" url="http://*:10000" />
+  </elements>
+</serviceContract>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Upload an Image";
+}
+
+<h2>@ViewBag.Title</h2>
+@section scripts{
+ <link href="@Url.Content("~/Content/Styles/jquery-ui-1.10.3.custom.min.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/jquery-ui-1.10.3.custom.min.js")" type="text/javascript"></script>
+ }
+<script type="text/javascript">
+    $(document).ready(function (){$('#DateTaken').datepicker({
+            changeMonth: true,
+            minDate: -62,
+            maxDate:0
+        });
+    });
+</script>
+
+@{Html.BeginForm("Upload", "Images", FormMethod.Post,new {enctype = "multipart/form-data"});}
+<fieldset>
+<legend>Enter Image Informatin</legend>
+     @Html.AntiForgeryToken()
+    <p>
+        Caption:@Html.TextBox("Caption")
+         @Html.ValidationMessage("Caption")
+    </p>
+    <p>Select a tag: @Html.DropDownList("TagId", ViewBag.Tags as SelectList)</p>
+    <p>
+       Description:<br />@Html.TextArea("Description", "", 5, 40, null)
+     @Html.ValidationMessage("Description")
+    </p>
+    <p>
+        Date taken: @Html.TextBox("DateTaken")
+         @Html.ValidationMessage("DateTaken")
+    </p>
+    <p>
+        <input type="file" name="ImageFile" />
+    </p>
+    <input  type="submit" value="Upload"/>
+</fieldset>
+<h2>@ViewBag.Message</h2>
+<p>@Html.ValidationSummary()</p>
+
+@{Html.EndForm();}

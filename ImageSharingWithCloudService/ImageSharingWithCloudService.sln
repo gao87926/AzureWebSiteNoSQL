@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ImageSharingWithCloudService", "ImageSharingWithCloudService\ImageSharingWithCloudService.ccproj", "{A64DD57A-AFEE-4AE3-89F0-CC00A1287532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imagesharingwithcloudserviceWebRole", "imagesharingwithcloudserviceWebRole\imagesharingwithcloudserviceWebRole.csproj", "{9062A70F-A879-4371-AD62-EAA0DA290F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imagesharingwithcloudserviceWebRole.Tests", "imagesharingwithcloudserviceWebRole.Tests\imagesharingwithcloudserviceWebRole.Tests.csproj", "{AA0D11FA-916B-4BF5-AC2D-39ECFE34E0BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imagesharingwithcloudserviceWorkerRole", "imagesharingwithcloudserviceWorkerRole\imagesharingwithcloudserviceWorkerRole.csproj", "{EACCDB97-6182-4698-A259-9961C0033837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A64DD57A-AFEE-4AE3-89F0-CC00A1287532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64DD57A-AFEE-4AE3-89F0-CC00A1287532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64DD57A-AFEE-4AE3-89F0-CC00A1287532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64DD57A-AFEE-4AE3-89F0-CC00A1287532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9062A70F-A879-4371-AD62-EAA0DA290F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9062A70F-A879-4371-AD62-EAA0DA290F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9062A70F-A879-4371-AD62-EAA0DA290F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9062A70F-A879-4371-AD62-EAA0DA290F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0D11FA-916B-4BF5-AC2D-39ECFE34E0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0D11FA-916B-4BF5-AC2D-39ECFE34E0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0D11FA-916B-4BF5-AC2D-39ECFE34E0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0D11FA-916B-4BF5-AC2D-39ECFE34E0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACCDB97-6182-4698-A259-9961C0033837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACCDB97-6182-4698-A259-9961C0033837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACCDB97-6182-4698-A259-9961C0033837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACCDB97-6182-4698-A259-9961C0033837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

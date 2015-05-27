@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageSharingWithCloudService" schemaVersion="2013-10.2.2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="imagesharingwithcloudserviceWebRole">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="http" port="85" localPort="85" />
+      <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="CS526DEMON" localPort="443" />
+    </Endpoints>
+    <Certificates>
+      <Certificate name="CS526DEMON" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
+  </WebRole>
+  <WorkerRole name="imagesharingwithcloudserviceWorkerRole">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="ExternalHTTP" protocol="http" port="10000" localPort="10000" />
+      <InternalEndpoint name="InternalTCP" protocol="tcp" />
+    </Endpoints>
+    <Certificates />
+  </WorkerRole>
+</ServiceDefinition>
